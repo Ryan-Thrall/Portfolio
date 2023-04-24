@@ -1,11 +1,26 @@
 <template>
-  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-    <div class="home-card p-5 bg-white rounded elevation-3">
-      <img src="https://bcw.blob.core.windows.net/public/img/8600856373152463" alt="CodeWorks Logo"
-        class="rounded-circle">
-      <h1 class="my-5 bg-dark text-white p-3 rounded text-center">
-        Vue 3 Starterrr
-      </h1>
+  <div class="cardParent">
+    <div class="mainCard">
+
+      <div class="container-fluid">
+        <div class="row cardHeight">
+          <div class="col-5 p-0">
+            <img src="../assets/img/ryan.jpg" alt="" class="img-fluid ryanImage blackBorder">
+          </div>
+          <div class="col-7 backGreen blackBorder p-0">
+            <p class="aboutMeText">Hi there! My name is Ryan Thrall and I’m a web developer and graduate of CodeWorks. I
+              enjoy creating clean
+              functional websites for a variety of purposes. I got interested in web development in high school after
+              taking some computer science classes. I enjoyed making small projects but after studying at CodeWorks I
+              learned the best practices and code organization which really helped with developing larger applications.
+              Thanks for stopping by, and I hope you enjoy browsing some of my work.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
     </div>
   </div>
 </template>
@@ -19,23 +34,40 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.home {
-  display: grid;
+.cardParent {
+  width: 100%;
+  height: calc(100vh - 32px - 64px);
+  margin: 0 auto;
+  position: relative;
+  // background-color: orange;
+}
+
+.mainCard {
+  width: 90%;
   height: 80vh;
-  place-content: center;
-  text-align: center;
-  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // background-color: yellow;
+}
 
-  .home-card {
-    width: 50vw;
+.ryanImage {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  // object-position: center;
+}
 
-    >img {
-      height: 200px;
-      max-width: 200px;
-      width: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-  }
+.blackBorder {
+  border: 2px solid black;
+}
+
+.backGreen {
+  background-color: #3BB273;
+}
+
+.cardHeight {
+  height: 80vh;
 }
 </style>
