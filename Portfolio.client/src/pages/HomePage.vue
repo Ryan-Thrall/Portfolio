@@ -7,8 +7,10 @@
           <div class="col-5 p-0">
             <img src="../assets/img/ryan.jpg" alt="" class="img-fluid ryanImage blackBorder">
           </div>
-          <div class="col-7 backGreen blackBorder p-0">
-            <p class="aboutMeText">Hi there! My name is Ryan Thrall and I’m a web developer and graduate of CodeWorks. I
+          <div class="col-7 backGreen blackBorder p-0 text-center">
+            <h1>About Me</h1>
+            <p class="aboutMeText p-5">Hi there! My name is Ryan Thrall and I’m a web developer and graduate of CodeWorks.
+              I
               enjoy creating clean
               functional websites for a variety of purposes. I got interested in web development in high school after
               taking some computer science classes. I enjoyed making small projects but after studying at CodeWorks I
@@ -69,5 +71,11 @@ export default {
 
 .cardHeight {
   height: 80vh;
+}
+
+.aboutMeText {
+  font-weight: bold;
+  font-size: 24pt;
+  line-height: 42pt;
 }
 </style>
