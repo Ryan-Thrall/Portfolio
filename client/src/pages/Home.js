@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import SvgIcon from '@mui/material/SvgIcon';
+import { GitHub, LinkedIn, Email, Phone } from '@mui/icons-material';
 
 function Home() {
   return (
@@ -10,10 +12,19 @@ function Home() {
 
 
       </div>
-      <div className="right flex justify-center h-screen">
-        <div className="ryanImage flex self-center"></div>
+      <div className="right h-screen flex flex-col justify-center items-center">
+        <div className="ryanImage"></div>
+
+        <div className="flex justify-between w-8/12">
+          <GitHub className="icon" sx={{ fontSize: "5rem" }} />
+          <LinkedIn className="icon" sx={{ fontSize: "5rem" }} />
+          <Email className="icon" sx={{ fontSize: "5rem" }} />
+          <Phone className="icon" sx={{ fontSize: "5rem" }} />
+        </div>
       </div>
+
     </div>
+
   )
 }
 

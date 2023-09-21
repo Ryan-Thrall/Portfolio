@@ -24,10 +24,15 @@
 }
 
 .ryanImage {
-  width: 700px;
-  height: 700px;
+  width: 650px;
+  height: 650px;
   border-radius: 50%;
   background-image: url(../public/ryan_image.jpg);
   background-position: center center;
   background-size: cover;
+}
+
+.icon {
+  color: var(--blue-color);
+  font-size: 5rem;
 }
