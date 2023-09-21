@@ -4,6 +4,7 @@
 
 :root {
   --main-bg-color: #181818;
+  --blue-color: #1A8490;
 }
 
 .bg-dark {
@@ -14,17 +15,19 @@
   background-color: var(--main-bg-color);
 }
 
-.ryanImage {
-  width: auto;
-  height: 100%;
-  /* margin-left: 30px; */
+.text-blue {
+  color: var(--blue-color);
 }
 
-.imageWrapper {
-  display: inline-block;
-  position: relative;
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ryanImage {
   width: 700px;
   height: 700px;
-  overflow: hidden;
   border-radius: 50%;
+  background-image: url(../public/ryan_image.jpg);
+  background-position: center center;
+  background-size: cover;
 }
