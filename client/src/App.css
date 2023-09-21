@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-bg-color: #181818;
+}
+
+.bg-dark {
+  background-color: var(--main-bg-color);
+}
+
+* {
+  background-color: var(--main-bg-color);
+}
+
+.ryanImage {
+  width: auto;
+  height: 100%;
+  /* margin-left: 30px; */
+}
+
+.imageWrapper {
+  display: inline-block;
+  position: relative;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  border-radius: 50%;
+}
