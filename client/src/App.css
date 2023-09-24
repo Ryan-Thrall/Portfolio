@@ -5,6 +5,8 @@
 :root {
   --main-bg-color: #181818;
   --blue-color: #1A8490;
+  --light-blue-color: #26BECF;
+  --white-color: #F1F1F1;
 }
 
 .bg-dark {
@@ -19,6 +21,10 @@
   color: var(--blue-color);
 }
 
+.text-white {
+  color: var(--white-color);
+}
+
 .montserrat {
   font-family: 'Montserrat', sans-serif;
 }
@@ -30,9 +36,16 @@
   background-image: url(../public/ryan_image.jpg);
   background-position: center center;
   background-size: cover;
+  border: 2px solid var(--white-color);
 }
 
 .icon {
   color: var(--blue-color);
   font-size: 5rem;
+}
+
+.icon:hover {
+  color: var(--light-blue-color);
+  transform: scale(1.2);
+  cursor: pointer;
 }
