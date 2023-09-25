@@ -15,10 +15,10 @@ function Home() {
         <div className="ryanImage"></div>
 
         <div className="flex justify-between w-8/12 pt-8">
-          <GitHub className="icon" sx={{ fontSize: "5rem" }} />
-          <LinkedIn className="icon" sx={{ fontSize: "5rem" }} />
-          <Email className="icon" sx={{ fontSize: "5rem" }} />
-          <Phone className="icon" sx={{ fontSize: "5rem" }} />
+          <a href="https://github.com/Ryan-Thrall" target="_blank" rel="noopener noreferrer"><GitHub className="icon" sx={{ fontSize: "5rem" }} /></a>
+          <a href="https://www.linkedin.com/in/ryan-thrall/" target="_blank" rel="noopener noreferrer"><LinkedIn className="icon" sx={{ fontSize: "5rem" }} /></a>
+          <a href="mailto: ryanthrall04@gmail.com" target="_blank" rel="noopener noreferrer"><Email className="icon" sx={{ fontSize: "5rem" }} /></a>
+          <a href="tel:2086154465" target="_blank" rel="noopener noreferrer"><Phone className="icon" sx={{ fontSize: "5rem" }} /></a>
         </div>
       </div>
 
